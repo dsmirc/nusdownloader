@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\dotpeek\NUS Downloader.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DFC0D36-D4CB-4FE3-A1A2-C21B1665D4E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>NUS Downloader</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libWiiSharp\LowerTitleID.cs" />
+    <Compile Include="libWiiSharp\WAD.cs" />
+    <Compile Include="libWiiSharp\WAD_Header.cs" />
+    <Compile Include="libWiiSharp\CommonKeyType.cs" />
+    <Compile Include="libWiiSharp\Ticket.cs" />
+    <Compile Include="libWiiSharp\StoreType.cs" />
+    <Compile Include="libWiiSharp\NusClient.cs" />
+    <Compile Include="libWiiSharp\U8_NodeType.cs" />
+    <Compile Include="libWiiSharp\U8.cs" />
+    <Compile Include="libWiiSharp\U8_Header.cs" />
+    <Compile Include="libWiiSharp\U8_Node.cs" />
+    <Compile Include="libWiiSharp\CommonKey.cs" />
+    <Compile Include="libWiiSharp\Shared.cs" />
+    <Compile Include="libWiiSharp\MessageEventArgs.cs" />
+    <Compile Include="libWiiSharp\IosPatcher.cs" />
+    <Compile Include="libWiiSharp\Headers.cs" />
+    <Compile Include="libWiiSharp\Lz77.cs" />
+    <Compile Include="libWiiSharp\CertificateChain.cs" />
+    <Compile Include="libWiiSharp\ContentType.cs" />
+    <Compile Include="libWiiSharp\Region.cs" />
+    <Compile Include="libWiiSharp\TMD.cs" />
+    <Compile Include="libWiiSharp\TMD_Content.cs" />
+    <Compile Include="libWiiSharp\ContentIndices.cs" />
+    <Compile Include="NUS_Downloader\Form1.cs" />
+    <Compile Include="NUS_Downloader\Database.cs" />
+    <Compile Include="NUS_Downloader\Program.cs" />
+    <Compile Include="NUS_Downloader\Properties\Resources.cs" />
+    <Compile Include="NUS_Downloader\Properties\Settings.cs" />
+    <Compile Include="wyDay\Controls\ThumbnailProgressState.cs" />
+    <Compile Include="wyDay\Controls\ITaskbarList3.cs" />
+    <Compile Include="wyDay\Controls\CTaskbarList.cs" />
+    <Compile Include="wyDay\Controls\Windows7ProgressBar.cs" />
+    <Compile Include="wyDay\Controls\ProgressBarState.cs" />
+    <Compile Include="wyDay\Controls\Windows7Taskbar.cs" />
+    <Compile Include="wmgCMS\WaterMarkTextBox.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NUS_Downloader\Form1.resx" />
+    <EmbeddedResource Include="NUS_Downloader\Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
