@@ -15,11 +15,11 @@ namespace libWiiSharp
 {
   public class NusClient : IDisposable
   {
-    private const string WII_NUS_URL = "http://nus.cdn.shop.wii.com/ccs/download/";
+    private const string WII_NUS_URL = "http://ccs.cdn.wup.shop.nintendo.net/ccs/download/";
     private const string DSI_NUS_URL = "http://nus.cdn.t.shop.nintendowifi.net/ccs/download/";
     private const string WII_USER_AGENT = "wii libnup/1.0";
     private const string DSI_USER_AGENT = "Opera/9.50 (Nintendo; Opera/154; U; Nintendo DS; en)";
-    private string nusUrl = "http://nus.cdn.shop.wii.com/ccs/download/";
+    private string nusUrl = "http://ccs.cdn.wup.shop.nintendo.net/ccs/download/";
     private WebClient wcNus = new WebClient();
     private bool useLocalFiles;
     private bool continueWithoutTicket;
@@ -59,7 +59,7 @@ namespace libWiiSharp
 
     public void SetToWiiServer()
     {
-      this.nusUrl = "http://nus.cdn.shop.wii.com/ccs/download/";
+      this.nusUrl = "http://ccs.cdn.wup.shop.nintendo.net/ccs/download/";
       this.wcNus.Headers.Add("User-Agent", "wii libnup/1.0");
     }
 

@@ -5,7 +5,11 @@ This is v1.9 Mod of the NUS Downloader by [hamachi-mp](https://forum.wii-homebre
 NUS Downloader is licensed under the GNU GPL v3.
 
 ## Changelog
-### v1.9 Mod
+### v1.9 Mod NUS-Fix (by WiiDatabase.de)
+* Switch to Wii U CDN for Wii titles since NUS is down
+* Modified from the decompiled EXE
+
+### v1.9 Mod (by hamachi-mp)
 * Based on NUS r122
 * Checkbox to use the folder structure of NUSD v1.5
 * Fixed script creation on "Emulate Update"
