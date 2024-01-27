@@ -28,4 +28,4 @@ jobs:
        5.0.x
 
    - name: Build solution
-     run: msbuild NUS Downloader.sln -t:rebuild -property:Configuration=Release
+     run: msbuild "NUS Downloader.sln" -t:rebuild -property:Configuration=Release
